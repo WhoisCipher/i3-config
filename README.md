@@ -15,6 +15,7 @@ This is a custom i3 window manager configuration with keybindings, workspace set
 
 1. Copy the configuration file to your i3 configuration directory:
    ```sh
+   git clone git@github.com:WhoisCipher/i3-config.git
    mkdir -p ~/.config/i3
    cp config ~/.config/i3/config
    ```
@@ -76,6 +77,13 @@ The bar is positioned at the bottom and shows:
 - Workspace indicators
 - System tray
 - Status updates (battery, volume, etc.)
+
+## Caps Lock Util
+If you wish to use the caps lock util that overlays content in the middle of the screen and notifies CAPS: ON then:
+   ```sh
+   sudo cp ~/.config/caps_util /usr/local/bin
+   ```
+NOTE: Changes will take affect on restart
 
 ## Additional Notes
 - The wallpaper is set using `feh` and should be located at `~/Wallpaper/minimal_gradient.png`.
